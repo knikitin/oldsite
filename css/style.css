@@ -4,7 +4,7 @@ body {
 	margin:0;
 	padding:0;
 	width:100%;
-	color:#6e6e6e;
+	color:#1e1e1e;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 }
 html, .main {
@@ -203,7 +203,7 @@ ul.sb_menu, ul.ex_menu {
 	margin:0;
 	padding:0;
 	list-style:none;
-	color:#959595;
+	color:#161616;
 }
 ul.sb_menu li, ul.ex_menu li {
 	margin:0;
@@ -216,7 +216,7 @@ ul.ex_menu li {
 	padding:4px 0;
 }
 ul.sb_menu li a {
-	color:#9a9a9a;
+	color:#161616;
 	text-decoration:none;
 	margin-left:-16px;
 	padding:4px 8px 4px 16px;
@@ -237,11 +237,11 @@ p.spec {
 p.infopost {
 	margin-bottom:8px;
 	padding:6px 0;
-	color:#6e6e6e;
+	color:#1e1e1e;
 }
 p.infopost a {
 	padding:0 2px;
-	color:#6e6e6e;
+	color:#1e1e1e;
 	text-decoration:underline;
 }
 p.infopost a.com {
