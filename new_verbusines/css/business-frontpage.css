@@ -6,3 +6,18 @@
 body {
   padding-top: 56px;
 }
+
+.maintop {
+  background:#e8e9d3 url(../images/main_bg.gif) repeat-x left top;
+  background-size: 100% 70%;
+}
+
+.mainpr {
+	background:#e8e9d3;
+}
+
+
+.mainheader {
+  background:#1b3f5f!important;
+}
+
