@@ -21,3 +21,11 @@ body {
   background:#1b3f5f!important;
 }
 
+.fbg {
+	border-top:4px solid #26455c;
+  background:#376384;
+}
+
+.fbgtext {
+  color:#61aee8;
+}
