@@ -29,3 +29,16 @@ body {
 .fbgtext {
   color:#61aee8;
 }
+
+ul.sb_menu li a:hover, ul.ex_menu li a:hover {
+	color:#315d7f;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.sb_menu li a {
+	color:#161616;
+	text-decoration:none;
+	margin-left:-16px;
+	padding:4px 8px 4px 16px;
+}
