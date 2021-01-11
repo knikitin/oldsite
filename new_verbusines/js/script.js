@@ -4,6 +4,14 @@ $.get( "parts/header.html").done(function( data ) {
 
 $.get( "parts/menu.html").done(function( data ) {
     $('.pbmenu').append( data );
+
+    // data = '<span class="sr-only">(текущая)</span>'
+    // $('.pbheader').append( data );
+    var pageType = $('meta[name=description]').attr('content');
+    var menuId = "#menuMain";
+    if (pageType == "Contacts") menuId = "#menuContacts";
+
+    $( menuId ).addClass( "active" );    
 });
 
 $.get( "parts/footer.html").done(function( data ) {
