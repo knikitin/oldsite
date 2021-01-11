@@ -9,8 +9,9 @@ $.get( "parts/menu.html").done(function( data ) {
     // $('.pbheader').append( data );
     var pageType = $('meta[name=description]').attr('content');
     var menuId = "";
-    if (pageType == "Contacts") menuId = "#menuContacts";
     if (pageType == "Main") menuId = "#menuMain";
+    if (pageType == "Documents") menuId = "#menuDocuments";
+    if (pageType == "Contacts") menuId = "#menuContacts";
     if (menuId != "") $( menuId ).addClass( "active" );    
 });
 
