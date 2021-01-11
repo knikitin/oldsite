@@ -12,6 +12,7 @@ $.get( "parts/menu.html").done(function( data ) {
     if (pageType == "Main") menuId = "#menuMain";
     if (pageType == "Documents") menuId = "#menuDocuments";
     if (pageType == "Contacts") menuId = "#menuContacts";
+    if (pageType == "Timetable") menuId = "#menuTimetable";
     if (menuId != "") $( menuId ).addClass( "active" );    
 });
 
