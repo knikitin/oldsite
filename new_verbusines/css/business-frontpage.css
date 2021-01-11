@@ -46,3 +46,12 @@ ul.sb_menu li a {
 p.infopost {
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 }
+
+.doclinks a {
+	color:#315d7f;
+	text-decoration:underline;
+}
+
+.gallery a img{
+	margin-bottom:8px;
+}
