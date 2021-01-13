@@ -1,0 +1,57 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/template/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.maintop {
+  background:#e8e9d3 url(../images/main_bg.gif) repeat-x left top;
+  background-size: 100% 70%;
+}
+
+.mainpr {
+	background:#e8e9d3;
+}
+
+
+.mainheader {
+  background:#1b3f5f!important;
+}
+
+.fbg {
+	border-top:4px solid #26455c;
+  background:#376384;
+}
+
+.fbgtext {
+  color:#61aee8;
+}
+
+ul.sb_menu li a:hover, ul.ex_menu li a:hover {
+	color:#315d7f;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.sb_menu li a {
+	color:#161616;
+	text-decoration:none;
+	margin-left:-16px;
+	padding:4px 8px 4px 16px;
+}
+
+p.infopost {
+	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+}
+
+.doclinks a {
+	color:#315d7f;
+	text-decoration:underline;
+}
+
+.gallery a img{
+	margin-bottom:8px;
+}
