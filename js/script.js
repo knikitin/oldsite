@@ -14,6 +14,17 @@ $.get( "parts/menu.html").done(function( data ) {
     if (pageType == "Contacts") menuId = "#menuContacts";
     if (pageType == "Timetable") menuId = "#menuTimetable";
     if (menuId != "") $( menuId ).addClass( "active" );    
+
+
+    $('.pbslider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1        
+    });
 });
 
 $.get( "parts/footer.html").done(function( data ) {
