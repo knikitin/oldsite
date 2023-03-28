@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegistrySet xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<RegistryRecord>
+		<Worker>
+			<LastName>Иванов</LastName>
+			<FirstName>Семен</FirstName>
+			<MiddleName>Петрович</MiddleName>
+			<Snils>123123</Snils>
+			<Position>Инженер</Position>
+			<EmployerInn>6399079997</EmployerInn>
+			<EmployerTitle>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "РОГА"</EmployerTitle>
+		</Worker>
+		<Organization>
+			<Inn>3702951901</Inn>
+			<Title>ЧУ ДПО "Промбезопасность"</Title>
+		</Organization>
+		<Test isPassed="true" learnProgramId="1">
+			<Date>2023-03-09T00:00:00.000</Date>
+			<ProtocolNumber>ОПП 21/23</ProtocolNumber>
+			<LearnProgramTitle>Оказание первой помощи пострадавшим</LearnProgramTitle>
+		</Test>
+	</RegistryRecord>
+</RegistrySet>
