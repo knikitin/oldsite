@@ -47,6 +47,10 @@ p.infopost {
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 }
 
+p.pheader {
+	font-weight:bold;
+}
+
 .doclinks a {
 	color:#315d7f;
 	text-decoration:underline;
