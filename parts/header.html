@@ -188,8 +188,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  new Swiper('.headerSwiper', {
+// Wait for the DOM to be fully loaded
+$(document).ready(function() {
+  // Initialize Swiper
+  const swiper = new Swiper('.headerSwiper', {
     // Enable autoplay
     autoplay: {
       delay: 5000,
