@@ -32,21 +32,21 @@
       <div class="col-lg-12">
         <div class="pbslider">
           <div class="slide-item">
-            <a href="#">
+            <a href="#" class="slide-link">
               <img src="images/slide1.jpg" alt="Промбезопасность" class="slide-image" />
-
+              <div class="slide-overlay"></div>
             </a>
           </div>
           <div class="slide-item">
-            <a href="#">
+            <a href="#" class="slide-link">
               <img src="images/slide2.jpg" alt="Обучение" class="slide-image" />
-
+              <div class="slide-overlay"></div>
             </a>
           </div>
           <div class="slide-item">
-            <a href="#">
+            <a href="#" class="slide-link">
               <img src="images/slide3.jpg" alt="Сертификация" class="slide-image" />
-
+              <div class="slide-overlay"></div>
             </a>
           </div>
         </div>
@@ -59,95 +59,132 @@
 .pbslider {
   position: relative;
   margin: 0 -15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .slide-item {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.slide-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide-image {
   width: 100%;
   height: auto;
-  transition: transform 0.5s ease;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
 }
 
 .slide-item:hover .slide-image {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-.slide-caption {
+.slide-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-  color: white;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  bottom: 0;
+  background: linear-gradient(to bottom, 
+    rgba(0,0,0,0.2) 0%,
+    rgba(0,0,0,0.4) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.slide-item:hover .slide-caption {
-  transform: translateY(0);
-}
-
-.slide-caption h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.slide-caption p {
-  margin: 10px 0 0;
-  font-size: 16px;
-  opacity: 0.9;
+.slide-item:hover .slide-overlay {
+  opacity: 1;
 }
 
 /* Slick slider custom styles */
 .pbslider .slick-dots {
-  bottom: 20px;
-  z-index: 1;
+  bottom: 25px;
+  z-index: 2;
+}
+
+.pbslider .slick-dots li {
+  margin: 0 4px;
+}
+
+.pbslider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  transition: all 0.3s ease;
 }
 
 .pbslider .slick-dots li button:before {
-  color: white;
-  opacity: 0.5;
-  font-size: 10px;
+  display: none;
 }
 
-.pbslider .slick-dots li.slick-active button:before {
-  opacity: 1;
+.pbslider .slick-dots li.slick-active button {
+  background: #fff;
+  transform: scale(1.2);
 }
 
 .pbslider .slick-prev,
 .pbslider .slick-next {
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background: rgba(0,0,0,0.5);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.3);
   border-radius: 50%;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.pbslider:hover .slick-prev,
+.pbslider:hover .slick-next {
+  opacity: 1;
 }
 
 .pbslider .slick-prev:hover,
 .pbslider .slick-next:hover {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.6);
 }
 
 .pbslider .slick-prev {
-  left: 20px;
+  left: 25px;
 }
 
 .pbslider .slick-next {
-  right: 20px;
+  right: 25px;
 }
 
 .pbslider .slick-prev:before,
 .pbslider .slick-next:before {
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 50px;
+  opacity: 1;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pbslider .slick-prev,
+  .pbslider .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .pbslider .slick-prev:before,
+  .pbslider .slick-next:before {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .pbslider .slick-dots {
+    bottom: 15px;
+  }
+}
+</style>
 </style>
