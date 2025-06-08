@@ -16,38 +16,8 @@
   <!-- Custom styles for this template -->
   <link href="css/business-frontpage.css" rel="stylesheet">
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- Fancybox 4 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-
-  <style>
-    .swiper {
-      width: 100%;
-      margin: 20px 0;
-    }
-    .swiper-slide {
-      text-align: center;
-      margin: 0 10px;
-    }
-    .swiper-slide img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      transition: transform 0.3s ease;
-    }
-    .swiper-slide img:hover {
-      transform: scale(1.05);
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #000;
-    }
-    .swiper-pagination-bullet-active {
-      background: #000;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
 
 </head>
 
@@ -66,56 +36,24 @@
           <div class="article">
             <h2><span>Учебные классы </span> </h2>
             <hr>
+            <div class="gallery">
+              <a class="fancybox" href="Gallery/IMG_1.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_1s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_2.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_2s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_3.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_3s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_4.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_4s.jpg" alt="" /></a> 
+              <br>
+              <a class="fancybox" href="Gallery/IMG_5.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_5s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_6.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_6s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_7.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_7s.jpg" alt="" /></a>
+    
+              <a class="fancybox" href="Gallery/IMG_8.JPG" data-fancybox-group="gallery" title=""><img src="Gallery/IMG_8s.jpg" alt="" /></a> 
             
-            <!-- Swiper -->
-            <div class="swiper gallerySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_1.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_1s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_2.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_2s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_3.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_3s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_4.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_4s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_5.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_5s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_6.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_6s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_7.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_7s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="Gallery/IMG_8.JPG" data-fancybox="gallery" data-caption="Учебный класс">
-                    <img src="Gallery/IMG_8s.jpg" alt="Учебный класс" />
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
-
           </div>
       
         </div>        
@@ -139,55 +77,18 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="vendor/fancy/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="vendor/fancy/source/jquery.fancybox.css?v=2.1.5" media="screen" />  
 
-  <!-- Fancybox 4 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
+  <script src="vendor/slick/slick.min.js"></script>  
+  
   <script src="js/script.js"></script>
 
   <script type="text/javascript">
-    // Initialize Swiper
-    const swiper = new Swiper('.gallerySwiper', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
-
-    // Initialize Fancybox
-    Fancybox.bind("[data-fancybox]", {
-      loop: true,
-      buttons: [
-        "zoom",
-        "slideShow",
-        "fullScreen",
-        "close"
-      ]
-    });
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+        });
   </script>
 
 </body>
